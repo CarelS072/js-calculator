@@ -1,45 +1,70 @@
 
 document.addEventListener('DOMContentLoaded', startCalc)
 
+function startCalc(){
+  var total = 0;
+  document.getElementById("display").innerHTML="0";
 
-// function displayResult() {
-//   document.getElementById("one").innerHTML = "2";
-// }
+  document.addEventListener("click", pressedButton);
 
-function startCalc(keypadPress){
-var total = 0;
-document.getElementById("display").innerHTML = total;
-var keypadPress = [[one,1],[two,2],[three,3],[four,4],[five,5],[six,6],[seven,7],[eight,8],[nine,9],[zero,0]]
+  
+};
+
+function display (total) {
+  document.getElementById("display").innerHTML=total;
+};
+
+
+function pressedButton(){
+
+  console.log(buttons)
+//  var buttonsCount = buttons.length;
+// console.log(buttonsCount)
 
 var buttons = document.getElementsByTagName("button");
-console.log(buttons)
-var buttonsCount = buttons.length;
-console.log(buttonsCount)
-for (var i = 0; i <= buttonsCount; i += 1) {
-    buttons[i].onclick
-      console.log(this.id)
-      
-    
+
+  
+  for (var i = 0; i <= buttons.length; i += 1) {
+      buttons[i].onclick = function(e) {
+          
+          console.log(this.id);
+          if (this.id == "one"){
+            display(1)
+          } else if (this.id == "two"){
+            display(2)
+          } else if (this.id == "three"){
+            display(3)
+          } else if (this.id == "four"){
+            display(4)
+          } else if (this.id == "five"){
+            display(5)
+          } else if (this.id == "six"){
+            display(6)
+          } else if (this.id == "seven"){
+            display(7)
+          } else if (this.id == "eight"){
+            display(8)
+          } else if (this.id == "nine"){
+            display(9)
+          } else if (this.id == "zero"){
+            display(0)
+          } else if (this.id == "add"){
+            display('+')
+          } else if (this.id == "subtract"){
+            display('-')
+          } else if (this.id == "divide"){
+            display('/')
+          } else if (this.id == "multiply"){
+            display('*')
+          } else if (this.id == "decimal"){
+            display('.')
+          }
+          
+
+
+
+
+
+      }
   }
-}
-
-
-// document.addEventListener("click", displayResult);
-// document.getElementById("one").innerHTML = "1";
-
-// var btnPress = document.getElementById("one").onclick = logtest('btnPress');
-
-// }
-
-// function buttonPress(){
-//   // var keypadPress = [[one,1],[two,2],[three,3],[four,4],[five,5],[six,6],[seven,7],[eight,8],[nine,9],[zero,0]]
-   
-//   for (x=0;x<keypadPress.length;x++){
-//      if (document.getElementById([x][0])) {
-//        return
-//   };
-// };
-
-// function logtest(nicmin) {
-//   console.log(nicmin);
-// }
+};
