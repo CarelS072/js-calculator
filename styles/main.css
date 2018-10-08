@@ -1,0 +1,102 @@
+body {
+    background-color: #30c8fb54;
+//  background-image: linear-gradient(145deg, white ,#30c8fb54 );
+
+} 
+calculator {
+  max-width: 600px;
+
+}
+
+
+header { 
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* background-color: black; */
+}
+media {
+  text-align: center;
+}
+
+display {
+  background-color: black;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  text-align: right;
+
+}
+main {
+  font-weight: bold;
+
+}
+
+blank {
+  opacity: 0;
+  
+}
+keypad{
+  background-color: bisque;
+  border-style: solid;
+  border-color: blue;
+  
+  
+
+button{
+  background-color: grey;
+  text-transform: capitalize;
+  
+}
+/* h5 {
+  text-align: left;
+} */
+
+th {
+  text-align: center;
+}
+
+nav {
+  /* margin-left: 25px;
+  margin-right: 25px; */
+  text-align: center;
+}
+
+article {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  padding: 1rem;
+  
+}
+
+art {
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  padding: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 25%;
+  
+}
+
+section {
+  padding-top: 1rem;
+  align-content: center;
+  text-align: left;
+}
+
+tr:hover { 
+  background: #1EAEDB; 
+}
+td a { 
+  display: block; 
+}
+
+/* 
+more info - https://css-tricks.com/almanac/properties/c/content/
+ticket - https://github.com/phase-0/phase-0/issues/5228
+div::before {
+  content: url(../images/wireframe-blog-index-mobile.jpg);
+} */
