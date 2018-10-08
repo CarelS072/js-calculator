@@ -20,21 +20,17 @@
         </header>
 
         <nav>
-          <div class="row">
-            <div class="u-full-width">
-            
-            </div>
-          </div>
+       
         </nav>
 
         <main>
 
-          <div class="Calculator">
+          <div class="calculator">
             <div class="row">
                 <div class="nine-columns">
                   <div class="row" id="display">
                     <div class="one-column" id="display">
-                      <div class="display" id="display" style="text-align:right;">
+                      <div class="calculator__display" id="display" style="text-align:right;">
                          0
                     
                       </div>  
@@ -42,43 +38,29 @@
                     </div>
                   </div>
                 <div class="row" id="operators">
-                  <div class="operators">
-                    <button id="add">+</button>
-                    <button id="subtract">-</button>
-                    <button id="divide"> / </button>
-                    <button id="multiply"> * </button>
-                  </div>
-                </div>
-                <div class="row">
-                <div id="keypad">
+                  <div class="calculator__keys">
+                    <button class="key--operator" data-action="add">+</button>
+                    <button class="key--operator" data-action="subtract">-</button>
+                    <button class="key--operator" data-action="divide"> / </button>
+                    <button class="key--operator" data-action="multiply"> * </button>
+             
                     <button id="seven">7</button>
                     <button id="eight">8</button>
                     <button id="nine">9</button>
-                    <button id="clear">C</button>
-                  </div>
-                </div>
-                <div class="row">
-                <div id="keypad">
+                    <button data-action="clear" id="clear">AC</button>
+           
                     <button id="four">4</button>
                     <button id="five">5</button>
                     <button id="six">6</button>
-                    <button id="equals">=</button>
-                  </div>
-                </div>
-               <div class="row">
-                <div id="keypad">
+                    <button class="key--equal" data-action="calculate" id="equals">=</button>
+          
                   <button id="one">1</button>
                   <button id="two">2</button>
                   <button id="three">3</button>
-                  <button id="equals">=</button>
-                </div>
-              </div>
-              <div class="row">
-                <div id="keypad">
+     
                   <button id="blank">0</button>
                   <button id="zero">0</button>
-                  <button id="decimal">.</button>
-                  <button id="equals">=</button>
+                  <button data-action="decimal" id="decimal">.</button>
                 </div>
               </div>
 

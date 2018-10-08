@@ -42,12 +42,13 @@ keypad{
   border-color: blue;
   
   
-
-button{
-  background-color: grey;
-  text-transform: capitalize;
-  
 }
+
+.calculator__keys { 
+  display: grid; 
+  /* other necessary CSS */ 
+}
+
 /* h5 {
   text-align: left;
 } */
