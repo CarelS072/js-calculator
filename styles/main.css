@@ -1,6 +1,6 @@
 body {
     background-color: #30c8fb54;
-//  background-image: linear-gradient(145deg, white ,#30c8fb54 );
+    background-image: linear-gradient(145deg, white ,#30c8fb54 );
 
 } 
 calculator {
@@ -44,7 +44,7 @@ keypad{
   
 }
 
-.calculator__keys { 
+.calculator__keysx { 
   display: grid; 
   /* other necessary CSS */ 
 }
